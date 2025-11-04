@@ -41,30 +41,6 @@ It acts as a bridge (“Setu”) between **employers** and **workers**, enabling
 | **API Type** | REST APIs |
 | **Hosting (optional)** | Vercel / Render / AWS |
 
----
-## 🗂️ Project Structure
-ShramSetu/
-│
-├── frontend/
-│ ├── src/
-│ │ ├── components/
-│ │ ├── pages/
-│ │ ├── App.js
-│ │ └── index.js
-│ └── package.json
-│
-├── backend/
-│ ├── src/
-│ │ ├── controllers/
-│ │ ├── models/
-│ │ ├── routes/
-│ │ └── server.js
-│ ├── package.json
-│ └── .env
-│
-├── README.md
-└── LICENSE
-
 
 ---
 ## Frontend
@@ -154,4 +130,62 @@ Commit and push
 
 Open a Pull Request
 ## 🗂️ Project Structure
+ShramSetu/
+│
+├── frontend/                          # React frontend
+│   ├── public/
+│   │   ├── index.html
+│   │   └── favicon.ico
+│   │
+│   ├── src/
+│   │   ├── assets/                    # Images, icons, logos
+│   │   ├── components/                # Reusable UI components (Navbar, Footer, etc.)
+│   │   ├── pages/                     # Page components (Home, Login, Dashboard, etc.)
+│   │   ├── context/                   # React Context (Auth, Job Context)
+│   │   ├── services/                  # API call functions (Axios)
+│   │   ├── App.js
+│   │   └── index.js
+│   │
+│   ├── .env                           # Frontend environment variables (Firebase keys, API URL)
+│   ├── package.json
+│   ├── tailwind.config.js             # Tailwind CSS config (if used)
+│   └── vite.config.js / webpack.config.js
+│
+├── backend/                           # Node.js backend
+│   ├── src/
+│   │   ├── config/                    # DB and Firebase config
+│   │   │   ├── db.js
+│   │   │   └── firebase.js
+│   │   │
+│   │   ├── controllers/               # Controller logic for routes
+│   │   │   ├── authController.js
+│   │   │   ├── jobController.js
+│   │   │   └── userController.js
+│   │   │
+│   │   ├── models/                    # Mongoose models
+│   │   │   ├── User.js
+│   │   │   ├── Job.js
+│   │   │   └── Application.js
+│   │   │
+│   │   ├── routes/                    # Express routes
+│   │   │   ├── authRoutes.js
+│   │   │   ├── jobRoutes.js
+│   │   │   └── userRoutes.js
+│   │   │
+│   │   ├── middleware/                # Auth middleware (JWT/Firebase)
+│   │   │   └── authMiddleware.js
+│   │   │
+│   │   ├── utils/                     # Helper functions
+│   │   │   └── errorHandler.js
+│   │   │
+│   │   └── server.js                  # Entry point
+│   │
+│   ├── .env                           # Backend environment variables (Mongo URI, JWT secret, etc.)
+│   ├── package.json
+│   └── README.md
+│
+├── .gitignore
+├── README.md
+└── LICENSE
+
 
