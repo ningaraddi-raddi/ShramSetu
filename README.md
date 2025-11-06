@@ -1,26 +1,26 @@
-# 🛠️ ShramSetu
+#  ShramSetu
 
 **ShramSetu** is a digital platform that connects daily wage workers — such as electricians, plumbers, carpenters, masons, and painters — with local employers who need their services.  
 It acts as a bridge (“Setu”) between **employers** and **workers**, enabling job postings, discovery, and hiring in a simple and transparent way.
 
 ---
 
-## 🚀 Features
+##  Features
 
-### 👷 For Workers (Employees)
+###  For Workers (Employees)
 - Sign up and create a worker profile (skills, location, experience)
 - Discover nearby jobs based on category and distance
 - Accept or reject job offers
 - Track assigned jobs and completion status
 - Secure login using Firebase Authentication
 
-### 🏢 For Employers
+###  For Employers
 - Register and create an employer profile
 - Post new job requirements (title, description, pay, and location)
 - View available workers and hire instantly
 - Manage active and completed job posts
 
-### 🌐 Common Features
+###  Common Features
 - Location-based job discovery using Maps API
 - Real-time updates for new job postings
 - Responsive UI built in React
@@ -30,7 +30,7 @@ It acts as a bridge (“Setu”) between **employers** and **workers**, enabling
 
 ---
 
-## 🧩 Tech Stack
+##  Tech Stack
 
 | Layer | Technology |
 |-------|-------------|
@@ -74,7 +74,7 @@ It acts as a bridge (“Setu”) between **employers** and **workers**, enabling
 
 
 
-## ⚙️ Setup Instructions
+##  Setup Instructions
 
 ### 1. Clone the repository
 ```bash
@@ -129,7 +129,7 @@ Make your changes
 Commit and push
 
 Open a Pull Request
-## 🗂️ Project Structure
+##  Project Structure
 ShramSetu/
 │
 ├── frontend/                          # React frontend
